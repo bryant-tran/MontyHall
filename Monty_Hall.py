@@ -25,6 +25,7 @@ def checkInput(input):
 #ask the user for the number of simulations to do
 num_of_iterations = input("Enter the number of simulations to perform: ")
 while(not checkInput(num_of_iterations)):
+    print(num_of_iterations, "is not a valid input")
     num_of_iterations = input("Please enter a valid integer between 1 and 1000000: ")    
 
 #for loop to run simulation num of times defined by user
